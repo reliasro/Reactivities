@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soinsoft.Reactivities.API", "Soinsoft.Reactivities.API\Soinsoft.Reactivities.API.csproj", "{DD1F8118-E4B5-41E4-90A9-CDE0E6D4A420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soinsoft.Reactivities.Application", "Soinsoft.Reactivities.Application\Soinsoft.Reactivities.Application.csproj", "{B3D0E15E-1B53-4518-B531-1E35ED628B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soinsoft.Reactivities.Domain", "Soinsoft.Reactivities.Domain\Soinsoft.Reactivities.Domain.csproj", "{9A7B9298-609C-4626-B749-AE12D39AD5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soinsoft.Reactivities.Persistence", "Soinsoft.Reactivities.Persistence\Soinsoft.Reactivities.Persistence.csproj", "{0B8C6697-80F7-4E89-8701-55243C88CCCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD1F8118-E4B5-41E4-90A9-CDE0E6D4A420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1F8118-E4B5-41E4-90A9-CDE0E6D4A420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1F8118-E4B5-41E4-90A9-CDE0E6D4A420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1F8118-E4B5-41E4-90A9-CDE0E6D4A420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D0E15E-1B53-4518-B531-1E35ED628B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D0E15E-1B53-4518-B531-1E35ED628B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D0E15E-1B53-4518-B531-1E35ED628B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D0E15E-1B53-4518-B531-1E35ED628B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7B9298-609C-4626-B749-AE12D39AD5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7B9298-609C-4626-B749-AE12D39AD5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7B9298-609C-4626-B749-AE12D39AD5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7B9298-609C-4626-B749-AE12D39AD5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8C6697-80F7-4E89-8701-55243C88CCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8C6697-80F7-4E89-8701-55243C88CCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8C6697-80F7-4E89-8701-55243C88CCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8C6697-80F7-4E89-8701-55243C88CCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
