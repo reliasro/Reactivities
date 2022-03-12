@@ -38,7 +38,16 @@ namespace API
             //Aqui registro mis servicios con una extension de metodo para IServiceCollection
             //debe residir en el proyecto infraestructura
            services.AgregarFuenteDB(_config.GetConnectionString("DefaultConnection"));
-         
+           
+           //Agrego politicas CORs para mis clientes
+           services.AddCors(opt=>{
+               opt.AddPolicy("CorsPolicy", policy=>{
+                   policy.AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .WithOrigins("http://localhost:3000");
+               });
+           });
+
          /*services.AddDbContext<DataContext>(
                 option => {option.UseSqlite(_config.GetConnectionString("DefaultConnection"));}
 
@@ -59,7 +68,7 @@ namespace API
           //  app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
