@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Soinsoft.Reactivities.Application.Features.Activities.Querys.List;
 using Soinsoft.Reactivities.Persistence;
 
 
@@ -47,7 +49,7 @@ namespace API
                    .WithOrigins("http://localhost:3000");
                });
            });
-
+          services.AddMediatR(typeof(ListQuery).Assembly);
          /*services.AddDbContext<DataContext>(
                 option => {option.UseSqlite(_config.GetConnectionString("DefaultConnection"));}
 
